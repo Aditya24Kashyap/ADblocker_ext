@@ -1,0 +1,23 @@
+{
+    "manifest_version": 3,
+    "name": "Ad Blocker",
+    "version": "1.0.0",
+    "description": "This is an AD-Blocker, used for blocking all the ads on browser.",
+    "permissions": [
+        "declarativeNetRequest"
+    ],
+    "icons": {
+    "16": "ad.png",
+    "48": "ad.png",
+    "128": "ad.png"
+  },
+    "declarative_net_request": {
+        "rule_resources": [
+            {
+                "id": "ruleset_1",
+                "enabled": true,
+                "path": "rules.json"
+            }
+        ]
+    }
+}
